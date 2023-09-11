@@ -6,7 +6,7 @@
 Определить это "некоторое множество", понять, почему так происходит, и написать различные тесты.
 
 ### Ответ:
-см. **CustomSerialServiceTestIt**
+см. **CustomSerialServiceTest**
 
 #### Правило 1
 Если один транзакционный метод (метод1), вызывает другой транзакционный метод (метод2) с propagation,
@@ -33,7 +33,7 @@
 Понять разницу между @Transactional из разных пакетов: спрингового и javax/jakarta
 
 ### Ответ:
-см. **TransactionalTestIt**
+см. **TransactionalTest**
 
 Аннотация @Transactional из пакета org.springframework.transaction.annotation имеет следующие параметры:
 * **transactionManager** - позволяет указать используемый менеджер транзакций
@@ -60,7 +60,7 @@
 Разобраться, в какой момент происходит flush изменений, и как на это влияет FlushMode
 
 ### Ответ:
-см. **FlushModeTypeTestIt.java**
+см. **FlushModeTypeTest.java**
 
 FlushModeTypes:
 * ALWAYS
@@ -92,7 +92,7 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 Как среагировать на завершение транзакции именно с помощью механизмов спринга.
 
 ### Ответ:
-см. **SerialServiceTestIt**
+см. **SerialServiceTest**
 
 В Spring 4.2 появилась аннотация @TransactionalEventListener, которая является расширением @EventListener
 и позволяет привязывать слушатель событий к фазе транзакции.
