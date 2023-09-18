@@ -26,7 +26,7 @@
 предполагающим создание новой транзакции, то соответственно откат каждой транзакции зависит 
 от поведения соответствующего метода.
 
-[@Transactional в Spring и исключения](https://habr.com/ru/articles/725064/)
+Что можно посмотреть: [@Transactional в Spring и исключения](https://habr.com/ru/articles/725064/)
 
 
 # Задание №2
@@ -87,8 +87,9 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 * **FlushModeType.MANUAL** (Hibernate), flush происходит:
     * при прямом вызове flush()
 
-[FlushMode in JPA and Hibernate – What it is and how to change it](https://thorben-janssen.com/flushmode-in-jpa-and-hibernate/#flushmodetypeauto-jpa--hibernate)
-[Как работает Flush в Hibernate](https://sysout.ru/kak-rabotaet-flush-v-hibernate/)
+Что можно посмотреть:
+* [FlushMode in JPA and Hibernate – What it is and how to change it](https://thorben-janssen.com/flushmode-in-jpa-and-hibernate/#flushmodetypeauto-jpa--hibernate)
+* [Как работает Flush в Hibernate](https://sysout.ru/kak-rabotaet-flush-v-hibernate/)
 
 
 # Задание №4
@@ -108,5 +109,6 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 * **AFTER_COMPLETION** — если транзакция завершена (комбинация AFTER_ROLLBACK и AFTER_COMMIT)
 * **BEFORE_COMMIT** - используется для запуска события непосредственно перед фиксацией транзакции.
 
-[Spring Data — Power of Domain Events](https://dev.to/kirekov/spring-data-power-of-domain-events-2okm)
-[Spring Events](https://www.baeldung.com/spring-events)
+Что можно посмотреть:
+* [Spring Data — Power of Domain Events](https://dev.to/kirekov/spring-data-power-of-domain-events-2okm)
+* [Spring Events](https://www.baeldung.com/spring-events)
