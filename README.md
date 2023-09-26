@@ -129,6 +129,19 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 Что произойдет, если в методе аннотированном @Transactional(readOnly = true) вызвать flush()?
 
 ### Ответ:
-см. **ReadOnlyServiceTest.java**
+см. **ReadOnlyServiceTest.java#testReadOnlyMethod**
 
 Исключение не возникает, изменения попадают в бд.
+
+# Задание №6
+
+### Вопрос:
+Необходимо проверить поведение при вызове из метода с readOnly = true метода с readOnly = false и наоборот 
+на факт сохранения изменений в бд.
+Примечание: параметр readOnly аннотации @Transactional имеет значение, только если создается новая транзакция,
+если используется существующая транзакция, то для нее не меняется параметр readOnly.
+
+### Ответ:
+см. **ReadOnlyServiceTest.java**
+
+Изменения сделанные в методе с readOnly = false попадают в бд, изменения сделанные в методе с readOnly = true НЕ попадают в бд
