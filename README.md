@@ -112,3 +112,13 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 Что можно посмотреть:
 * [Spring Data — Power of Domain Events](https://dev.to/kirekov/spring-data-power-of-domain-events-2okm)
 * [Spring Events](https://www.baeldung.com/spring-events)
+
+# Задание №5
+
+### Вопрос:
+Что произойдет, если в методе аннотированном @Transactional(readOnly = true) вызвать flush()?
+
+### Ответ:
+см. **ReadOnlyServiceTest.java**
+
+Исключение не возникает, изменения попадают в бд.
