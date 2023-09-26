@@ -122,3 +122,13 @@ Hibernate добавляет специфичные FlushModeTypes ALWAYS и MAN
 см. **ReadOnlyServiceTest.java**
 
 Исключение не возникает, изменения попадают в бд.
+
+# Задание №5
+
+### Вопрос:
+Что произойдет, если в методе аннотированном @Transactional(readOnly = true) вызвать flush()?
+
+### Ответ:
+см. **ReadOnlyServiceTest.java**
+
+Исключение не возникает, изменения попадают в бд.
